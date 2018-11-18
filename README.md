@@ -25,7 +25,9 @@ spider目录 ->里面只有一个init.py文件，（使用genspider之后会多�
 
 ### sqlite3链接操作在database.py中
 补充一点查询的时候execute函数不会反回结果，提取结果需要 <br>
-cu = conn.cursor #cursor是光标<br>
-all_results = cu.fetchall()<br>
+```
+cu = conn.cursor //cursor是光标
+all_results = cu.fetchall()
+```
 fetch只能执行一次，fetch 包括fetchone，fetchall，fetchmany（指定）<br>
 
